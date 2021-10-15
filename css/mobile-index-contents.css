@@ -43,6 +43,7 @@
 }
 .mobile-index-contents__sns__column{
     width: 50%;
+    min-width: 124px;
     padding: 0 25px;
     font-weight: 600;
     display: flex;
