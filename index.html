@@ -5,11 +5,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>'뉴욕에서 온 파인 캐쥬얼 레스토랑, 쉐이크쉑'</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/mobile-style.css">
     <link rel="shortcut icon" type="image/x-icon" href="https://www.mcdonalds.co.kr/kor/images/favicon.ico">
 <body>
+
+
+
+
+
+    <!-- 왼쪽 햄버거메뉴 -->
+    <div id="leftMenu" class="mobile-hamberger-leftMenu">
+        
+            <div class="mobile-hamberger-leftMenu__xbtn">
+                <i class="fas fa-times fa-2x" onclick="closeNav();"></i>
+            </div>
+            <a href="index.html"><div class="mobile-hamberger-leftMenu__logo">
+                <img src="images/ss_white.png" alt="">
+            </div></a>
+            <a href="food-and-drink_m.html"><div class="mobile-hamberger-title">
+                FOOD & DRINK
+            </div></a>
+            <a href="brandstory_m.html"><div class="mobile-hamberger-title">
+                BRAND STORY
+            </div></a>
+            <a href="delivery_m.html"><div class="mobile-hamberger-title">
+                DELIVERY
+            </div></a>
+
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <header class="mobile-status-bar">
-            <a href="#"><i class="fas fa-bars fa-2x"></i></a>
+            <a href="#"><i class="fas fa-bars fa-2x" onclick="openNav();"></i></a>
 
             <a href="index.html"><img src="images/ss_logo.png" alt=""></a>
 
@@ -17,7 +65,29 @@
     </header>
 
 
-    <div class="mobile-main-slide">
+
+
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide mobile-main-slide">
+                <img src="images/main_visual_m_200528_01.jpg" alt="">
+            </div>
+            <div class="swiper-slide mobile-main-slide">
+                <img src="images/main_visual_m_200528_02.jpg" alt="">
+            </div>
+            <div class="swiper-slide mobile-main-slide">
+                <img src="images/main_visual_m_200528_03.jpg" alt="">
+            </div>
+            <div class="swiper-slide mobile-main-slide">
+                <img src="images/main_visual_m_200528_04.jpg" alt="">
+            </div>
+            
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- <div class="mobile-main-slide">
         <img src="images/main_visual_m_200528_01.jpg" alt="">
 
         <div class="mobile-main-slide__btn">
@@ -26,10 +96,10 @@
             <div class="mobile-main-slide__btn__circle"></div>
             <div class="mobile-main-slide__btn__circle"></div>
         </div>
-    </div>
+    </div> -->
 
 
-    <div class="mobile-index-contents">
+    <!-- <div class="mobile-index-contents"> -->
         <div class="mobile-index-contents__title">
             <h2>How our story begins</h2>
         </div>
@@ -99,7 +169,7 @@
                 </p>
             </ul>
         </div>
-    </div>  <!-- mobile-index-contents -->
+    <!-- </div>  mobile-index-contents -->
 
     <footer class="footer">
         <div class="footer__title">For You</div>
@@ -145,5 +215,8 @@
 
 
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
