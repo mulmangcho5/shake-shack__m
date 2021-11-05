@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>'뉴욕에서 온 파인 캐쥬얼 레스토랑, 쉐이크쉑'</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/mobile-style.css">
     <link rel="shortcut icon" type="image/x-icon" href="https://www.mcdonalds.co.kr/kor/images/favicon.ico">
 <body>
@@ -13,37 +14,32 @@
 
 
 
-
-
-
-
-
     <!-- 왼쪽 햄버거 사이드 쇼 메뉴 -->
     <div id="leftMenu" class="mobile-hamberger-leftMenu">
         
-        <div class="mobile-hamberger-leftMenu__xbtn">
-            <i class="fas fa-times fa-2x" onclick="closeNav();"></i>
-        </div>
-        <a href="index.html"><div class="mobile-hamberger-leftMenu__logo">
-            <img src="images/ss_white.png" alt="">
-        </div></a>
-        <a href="food-and-drink_m.html"><div class="mobile-hamberger-leftMenu__title">
-            FOOD & DRINK
-        </div></a>
-        <a href="brandstory_m.html"><div class="mobile-hamberger-leftMenu__title">
-            BRAND STORY
-        </div></a>
-        <a href="delivery_m.html"><div class="mobile-hamberger-leftMenu__title">
-            DELIVERY
-        </div></a>
+            <div class="mobile-hamberger-leftMenu__xbtn">
+                <i class="fas fa-times fa-2x" onclick="closeNav();"></i>
+            </div>
+            <a href="index.html"><div class="mobile-hamberger-leftMenu__logo">
+                <img src="images/ss_white.png" alt="">
+            </div></a>
+            <a href="food-and-drink_m.html"><div class="mobile-hamberger-leftMenu__title">
+                FOOD & DRINK
+            </div></a>
+            <a href="brandstory_m.html"><div class="mobile-hamberger-leftMenu__title">
+                BRAND STORY
+            </div></a>
+            <a href="delivery_m.html"><div class="mobile-hamberger-leftMenu__title">
+                DELIVERY
+            </div></a>
 
-    
-</div>
+        
+    </div>
 
 
 
-        <!-- 오른쪽 위치 사이드 쇼 메뉴 -->
-        <div id="rightMenu" class="mobile-location-rightMenu">
+         <!-- 오른쪽 위치 사이드 쇼 메뉴 -->
+         <div id="rightMenu" class="mobile-location-rightMenu">
         
             <div class="mobile-location-rightMenu__xbtn">
                 <i class="fas fa-times fa-2x" onclick="closeNav2();"></i>
@@ -115,6 +111,15 @@
 
 
 
+
+
+
+
+
+
+
+
+<!-- html 시작 -->
     <header class="mobile-status-bar">
             <a href="#"><i class="fas fa-bars fa-2x" onclick="openNav();"></i></a>
 
@@ -123,47 +128,92 @@
             <a href="#"><i class="fas fa-map-marker-alt fa-2x" onclick="openNav2();"></i></a>
     </header>
 
-    <div class="mobile-main-img2">
-        <div class="mobile-main-img__title2">
-            쉐이크쉑 딜리버리,<br>
-            차원이 다른 딜리버리의 시작
+
+
+
+    <div class="mobile-location">
+
+
+        <div class="mobile-location__img">
+            <img src="images/sub_visual_cheongdam_m_180404.jpg" alt="">
         </div>
-    </div>
 
-    <div class="mobile-delivery-box">
-        <p class="mobile-delivery-title">딜리버리</p>
-        <p class="mobile-delivery-box__text">
-            * 아이콘 클릭 시, 해당 어플로 이동합니다.
-        </p>
-        <div class="mobile-delivery-box__icon">
-            <a href="#"><img src="images/del_01.png" alt=""></a>
-            <a href="#"><img src="images/del_02.png" alt=""></a>
-            <a href="#"><img src="images/del_03.png" alt=""></a>
-            <a href="#"><img src="images/del_04.png" alt=""></a>
+        <div class="mobile-location__title">
+            Cheongdam 청담
         </div>
+
+        <div class="mobile-location__detail">
+            트렌드세터가 모이는 장소 그리고 파인다이닝(Fine Dining)의 중심지인 청담, 그 곳에서 쉐이크쉑 2호점이 함께합니다. <br>
+            함께라서 더 좋은 두 번째 쉐이크쉑에서 즐거운 시간을 보내세요.
+        </div>
+
+        <div class="mobile-location__borderbar"></div>
+
+        <div class="mobile-location__title">
+            Location 위치안내
+        </div>
+
+        <div class="mobile-location__Subtitle">
+                운영시간
+        </div>
+
+        <div class="mobile-location__text">
+                <p>
+                    영업시간 : 11:00~22:00 <br>
+                    11:00~22:30 (금,토)
+                </p>    
+                <p>
+                    딜리버리 / 픽업 : 11:00~21:30 <br>
+                    11:00~22:00 (금,토)
+                </p>
+        </div>
+
+        <div class="mobile-location__Subtitle">
+                매장주소
+        </div>
+
+        <div class="mobile-location__text">
+                <p>
+                    서울시 강남구 도산대로 327 <br> 
+                    SGF청담타워 1층 <br>
+                    (구주소)서울시 강남구 신사동 652-16 <br>
+                    TEL 02-510-5217
+                </p>    
+        </div>
+
+        <div class="mobile-location__Subtitle">
+                주차안내
+        </div>
+
+        <div class="mobile-location__text">
+                <p>
+                    본인 주차 시 30분 3000원 <br>
+                    발렛 이용시 30분 3000원+주차비 3000원 <br>
+                    초과 시 10분당 1000원 부과
+                </p>    
+        </div>
+
+        <div class="mobile-location__Subtitle">
+                공유하기
+        </div>
+
+        <div class="mobile-location__icon">
+                <img src="images/sns_btn01.png" alt="">
+                <img src="images/sns_btn02.png" alt="">
+                <img src="images/sns_btn03.png" alt="">
+        </div>
+
+        <div class="mobile-location__borderbar"></div>
+        
     </div>
 
-    
-    <div class="mobile-title-and-Underbar">
-        <h1>Now on Delivery</h1>
-        <p>underline</p>
+    <div>
+        <iframe class="mobile-location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.3569152414307!2d127.03541531566273!3d37.523082979806134!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca389a14a120b%3A0x7915572c89550242!2z7ImQ7J207YGs7ImRIOyyreuLtOygkA!5e0!3m2!1sko!2skr!4v1636042394182!5m2!1sko!2skr" allowfullscreen="" loading="lazy"></iframe>
     </div>
 
-    <div class="mobile-delivery__img">
-        <img src="images/delivery_01.png" alt="">
-    </div>
+ 
 
 
-
-
-
-
-
-
-
-
-
-   
 
     <footer class="footer">
         <div class="footer__title">For You</div>
@@ -196,10 +246,18 @@
         </div>
         <div class="footer__text__last"><a href="http://www.shakeshack.kr/cs/cctv.jsp" target="blank">영상정보처리기기운영·관리방침</a></div>
     </footer>
-
-
-
     
+
+
+
+
+
+
+
+
+
+
+
     <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
